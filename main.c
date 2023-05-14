@@ -5,13 +5,13 @@
 static void repl()
 {
   stack_init();
-  char line[1024];                      
+  char line[1024]; 
+  
   for (;;)                              
   {
     printf("> ");                       
     
-    if (!fgets(line, sizeof(line), stdin))      
-        
+    if (!fgets(line, sizeof(line), stdin))       
     {
       printf("\n");                      
       break;
@@ -21,8 +21,8 @@ static void repl()
   }
 }
 
-int main () {
-  
+int main () 
+{
   repl();
   return 0;
 }
