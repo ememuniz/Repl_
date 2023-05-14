@@ -24,16 +24,10 @@ void stack_push(Stack* s, int value)
   s->elements[s->top++]= value;
 }
 
-
-
-
-int stack_pop (Stack* s) //Desempilha a pilha
+int stack_pop (Stack* s) 
 {
   return s->elements[--s->top];
 }
-
-
-
 
 void stack_print(Stack* s)
 {
